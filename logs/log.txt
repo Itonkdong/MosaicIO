@@ -1,0 +1,5 @@
+
+Img Path: D:\Fax\DPS Mosaic Project\Mosaic Project\src\bear.jpg, Name: bear.jpg, Size: 740x740, Tile Size: 9x9, Algorithm: Improved, Exe. time: 0.21112632751464844
+Img Path: D:\Fax\DPS Mosaic Project\Mosaic Project\test_images\4k.jpg, Name: 4k.jpg, Size: 5472x3648, Tile Size: 9x9, Algorithm: Improved, Exe. time: 7.440642833709717
+Img Path: D:\Fax\DPS Mosaic Project\Mosaic Project\test_images\4k.jpg, Name: 4k.jpg, Size: 5472x3648, Tile Size: 9x9, Algorithm: Base, Exe. time: 1062.3052668571472
+Img Path: D:\Fax\DPS Mosaic Project\Mosaic Project\test_images\4k.jpg, Name: 4k.jpg, Size: 5472x3648, Tile Size: 9x9, Algorithm: Improved, Exe. time: 7.548938989639282
