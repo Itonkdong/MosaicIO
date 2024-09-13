@@ -1,0 +1,6 @@
+Name: beach.jpg                 Size: 3000x4000  Tile Size: 128x128   Regions: 768      Region Avg. Time: 0.0002446740 s   Algorithm: Improved   Exe. Time: 0.1857759952545166 s
+Name: butterfly.jpg             Size: 2160x3840  Tile Size: 128x128   Regions: 510      Region Avg. Time: 0.0002428502 s   Algorithm: Improved   Exe. Time: 0.1215665340423584 s
+Name: eye.jpg                   Size: 3744x5616  Tile Size: 128x128   Regions: 1320     Region Avg. Time: 0.0002464967 s   Algorithm: Improved   Exe. Time: 0.32826876640319824 s
+Name: girl.jpg                  Size: 2030x3608  Tile Size: 128x128   Regions: 464      Region Avg. Time: 0.0002583606 s   Algorithm: Improved   Exe. Time: 0.1170189380645752 s
+Name: landscape.jpg             Size: 3648x5472  Tile Size: 128x128   Regions: 1247     Region Avg. Time: 0.0002930582 s   Algorithm: Improved   Exe. Time: 0.36880040168762207 s
+Name: unreal.jpeg               Size: 2160x3840  Tile Size: 128x128   Regions: 510      Region Avg. Time: 0.0003084262 s   Algorithm: Improved   Exe. Time: 0.15613150596618652 s

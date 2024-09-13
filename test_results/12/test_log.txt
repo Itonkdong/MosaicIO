@@ -1,0 +1,16 @@
+Name: bear.jpg                  Size: 740x740    Tile Size: 16x16     Regions: 2209     Region Avg. Time: 0.0000310857 s   Algorithm: Improved   Exe. Time: 0.07082390785217285 s
+Name: bear.jpg                  Size: 740x740    Tile Size: 16x16     Regions: 2209     Region Avg. Time: 0.0010519991 s   Algorithm: Base       Exe. Time: 2.2290396690368652 s
+Name: bear.jpg                  Size: 740x740    Tile Size: 32x32     Regions: 576      Region Avg. Time: 0.0000371983 s   Algorithm: Improved   Exe. Time: 0.022680997848510742 s
+Name: bear.jpg                  Size: 740x740    Tile Size: 32x32     Regions: 576      Region Avg. Time: 0.0010641978 s   Algorithm: Base       Exe. Time: 0.5659389495849609 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 16x16     Regions: 4242     Region Avg. Time: 0.0000331773 s   Algorithm: Improved   Exe. Time: 0.13903093338012695 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 16x16     Regions: 4242     Region Avg. Time: 0.0010546407 s   Algorithm: Base       Exe. Time: 4.334047079086304 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 32x32     Regions: 1071     Region Avg. Time: 0.0000386097 s   Algorithm: Improved   Exe. Time: 0.043703317642211914 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 32x32     Regions: 1071     Region Avg. Time: 0.0010888484 s   Algorithm: Base       Exe. Time: 1.0898423194885254 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 16x16     Regions: 8160     Region Avg. Time: 0.0000350264 s   Algorithm: Improved   Exe. Time: 0.2906148433685303 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 16x16     Regions: 8160     Region Avg. Time: 0.0010510739 s   Algorithm: Base       Exe. Time: 8.462621450424194 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 32x32     Regions: 2040     Region Avg. Time: 0.0000403002 s   Algorithm: Improved   Exe. Time: 0.08379745483398438 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 32x32     Regions: 2040     Region Avg. Time: 0.0010612395 s   Algorithm: Base       Exe. Time: 2.1122076511383057 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 16x16     Regions: 1000     Region Avg. Time: 0.0000322816 s   Algorithm: Improved   Exe. Time: 0.03199338912963867 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 16x16     Regions: 1000     Region Avg. Time: 0.0010541449 s   Algorithm: Base       Exe. Time: 1.0149729251861572 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 32x32     Regions: 260      Region Avg. Time: 0.0000374963 s   Algorithm: Improved   Exe. Time: 0.009999752044677734 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 32x32     Regions: 260      Region Avg. Time: 0.0011035025 s   Algorithm: Base       Exe. Time: 0.26484060287475586 s

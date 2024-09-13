@@ -2,7 +2,7 @@ import time
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from tkinter import ttk
-from Mosaic4 import *
+from MosaicProcessor import *
 from ImageProcessor import ImageProcessor
 
 
@@ -25,7 +25,8 @@ class MosaicIO:
         self.__full_save_path_label = None
         self.__info_label = None
         self.__tile_size = None
-        self.__algorithm_choice = None
+        self.__fill_option_var: tk.StringVar | None = None
+        self.__fill_option = None
         self.__mosaic = None
         self.__creation_time = 0
         self.__show_mosaic_button = None
@@ -58,6 +59,11 @@ class MosaicIO:
             self.show_info("You must select an image first.")
             return
 
+        if self.__fill_option_var.get() == "Fill":
+            self.__fill_option = MosaicProcessor.FILL_BORDERS
+        else:
+            self.__fill_option = MosaicProcessor.KEEP_SAME_SIZE
+
         self.show_info("Creating a mosaic...(this action can take couple of seconds)")
 
         self.__root.after(50, self.__do_mosaic)
@@ -65,7 +71,10 @@ class MosaicIO:
     def __do_mosaic(self, ):
         start_time = time.time()
         self.__mosaic = self.__mosaic_processor.create_mosaic(self.__selected_img_name, self.__tile_size,
-                                                              title=self.__mosaic_title)
+                                                              title=self.__mosaic_title,
+                                                              fill_option=self.__fill_option,
+                                                              improved=True
+                                                              )
 
         end_time = time.time()
 
@@ -132,19 +141,19 @@ class MosaicIO:
         self.__full_save_path_label.pack()
 
         # Create a label
-        label = tk.Label(self.__root, text="Choose an Algorithm:")
+        label = tk.Label(self.__root, text="Choose a fill options:")
         label.pack(pady=5)
 
         # Create a Tkinter variable to hold the selected value of the radio buttons
-        self.algorithm_choice = tk.StringVar(value="Improved")  # Set a default value
+        self.__fill_option_var = tk.StringVar(value="Keep")  # Set a default value
 
         # Create two radio buttons for "Base Algorithm" and "Improved Algorithm"
-        self.base_algorithm_rb = tk.Radiobutton(self.__root, text="Base Algorithm", variable=self.algorithm_choice,
-                                                value="Base")
+        self.base_algorithm_rb = tk.Radiobutton(self.__root, text="Fill borders", variable=self.__fill_option_var,
+                                                value="Fill")
         self.base_algorithm_rb.pack()
 
-        self.improved_algorithm_rb = tk.Radiobutton(self.__root, text="Improved Algorithm",
-                                                    variable=self.algorithm_choice, value="Improved")
+        self.improved_algorithm_rb = tk.Radiobutton(self.__root, text="Keep same size",
+                                                    variable=self.__fill_option_var, value="Keep")
         self.improved_algorithm_rb.pack()
 
         # Add a button to trigger the button click function
@@ -162,8 +171,8 @@ class MosaicIO:
 
 
 if __name__ == '__main__':
-    mosaic_processor = MosaicProcessor()
     image_processor = ImageProcessor()
+    mosaic_processor = MosaicProcessor(image_processor)
     root = tk.Tk()
     app = MosaicIO(mosaic_processor, image_processor, root)
     app.start()

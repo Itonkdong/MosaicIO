@@ -1,0 +1,12 @@
+Name: bear.jpg                  Size: 740x740    Tile Size: 4x4       Regions: 34225    Region Avg. Time: 0.0000320768 s   Algorithm: Improved   Exe. Time: 1.138814926147461 s
+Name: bear.jpg                  Size: 740x740    Tile Size: 8x8       Regions: 8649     Region Avg. Time: 0.0000313789 s   Algorithm: Improved   Exe. Time: 0.27459073066711426 s
+Name: bear.jpg                  Size: 740x740    Tile Size: 16x16     Regions: 2209     Region Avg. Time: 0.0000333170 s   Algorithm: Improved   Exe. Time: 0.07452940940856934 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 4x4       Regions: 66566    Region Avg. Time: 0.0000287766 s   Algorithm: Improved   Exe. Time: 1.9790709018707275 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 8x8       Regions: 16683    Region Avg. Time: 0.0000289839 s   Algorithm: Improved   Exe. Time: 0.49465250968933105 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 16x16     Regions: 4242     Region Avg. Time: 0.0000323069 s   Algorithm: Improved   Exe. Time: 0.14240717887878418 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 4x4       Regions: 129600   Region Avg. Time: 0.0000281173 s   Algorithm: Improved   Exe. Time: 3.7680513858795166 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 8x8       Regions: 32400    Region Avg. Time: 0.0000277315 s   Algorithm: Improved   Exe. Time: 0.9397351741790771 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 16x16     Regions: 8160     Region Avg. Time: 0.0000325382 s   Algorithm: Improved   Exe. Time: 0.2736053466796875 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 4x4       Regions: 16000    Region Avg. Time: 0.0000294675 s   Algorithm: Improved   Exe. Time: 0.4847419261932373 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 8x8       Regions: 4000     Region Avg. Time: 0.0000288741 s   Algorithm: Improved   Exe. Time: 0.1171729564666748 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 16x16     Regions: 1000     Region Avg. Time: 0.0000330339 s   Algorithm: Improved   Exe. Time: 0.03272128105163574 s

@@ -1,0 +1,14 @@
+NAME: abstract-1.jpg       SIZE: 4000x4000  T_SIZE: 32x32     REG: 15625    REG_AVG: 0.0011589999 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 18.144770860671997 s
+NAME: abstract-2.jpg       SIZE: 2400x3200  T_SIZE: 32x32     REG: 7500     REG_AVG: 0.0013372829 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 10.061172008514404 s
+NAME: beach.jpg            SIZE: 3000x4000  T_SIZE: 32x32     REG: 11750    REG_AVG: 0.0012000885 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 13.983325719833374 s
+NAME: butterfly.jpg        SIZE: 2160x3840  T_SIZE: 32x32     REG: 8160     REG_AVG: 0.0011726612 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 9.456297874450684 s
+NAME: eye.jpg              SIZE: 3744x5616  T_SIZE: 32x32     REG: 20592    REG_AVG: 0.0011997708 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 24.656302452087402 s
+NAME: flower.jpg           SIZE: 6000x4000  T_SIZE: 32x32     REG: 23500    REG_AVG: 0.0012147485 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 28.48023509979248 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0.0011678095 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 8.277209997177124 s
+NAME: home-table.jpg       SIZE: 6023x4015  T_SIZE: 32x32     REG: 23814    REG_AVG: 0.0011710245 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 27.59827947616577 s
+NAME: landscape.jpg        SIZE: 3648x5472  T_SIZE: 32x32     REG: 19494    REG_AVG: 0.0012075181 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 23.612728595733643 s
+NAME: roof.jpg             SIZE: 6240x4160  T_SIZE: 32x32     REG: 25350    REG_AVG: 0.0011698578 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 29.744730949401855 s
+NAME: sea.jpg              SIZE: 3822x5733  T_SIZE: 32x32     REG: 21600    REG_AVG: 0.0011612934 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 24.807080030441284 s
+NAME: street-lamp.jpg      SIZE: 5537x4153  T_SIZE: 32x32     REG: 22620    REG_AVG: 0.0011911688 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 26.667850017547607 s
+NAME: underground.jpg      SIZE: 5275x7912  T_SIZE: 32x32     REG: 40920    REG_AVG: 0.0012165239 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 49.4256317615509 s
+NAME: unreal.jpeg          SIZE: 2160x3840  T_SIZE: 32x32     REG: 8160     REG_AVG: 0.0012926364 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    CORES: -1     EXEC_TIME: 10.428156614303589 s

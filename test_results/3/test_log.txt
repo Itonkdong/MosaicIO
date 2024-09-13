@@ -1,0 +1,12 @@
+Name: beach.jpg                 Size: 3000x4000  Tile Size: 32x32     Regions: 11750    Region Avg. Time: 0.0000423801 s   Algorithm: Improved   Exe. Time: 0.5142426490783691 s
+Name: beach.jpg                 Size: 3000x4000  Tile Size: 64x64     Regions: 2961     Region Avg. Time: 0.0000786110 s   Algorithm: Improved   Exe. Time: 0.24519801139831543 s
+Name: butterfly.jpg             Size: 2160x3840  Tile Size: 32x32     Regions: 8160     Region Avg. Time: 0.0000447462 s   Algorithm: Improved   Exe. Time: 0.3777189254760742 s
+Name: butterfly.jpg             Size: 2160x3840  Tile Size: 64x64     Regions: 2040     Region Avg. Time: 0.0000797313 s   Algorithm: Improved   Exe. Time: 0.17486000061035156 s
+Name: eye.jpg                   Size: 3744x5616  Tile Size: 32x32     Regions: 20592    Region Avg. Time: 0.0000415692 s   Algorithm: Improved   Exe. Time: 0.9058423042297363 s
+Name: eye.jpg                   Size: 3744x5616  Tile Size: 64x64     Regions: 5192     Region Avg. Time: 0.0000788459 s   Algorithm: Improved   Exe. Time: 0.42581748962402344 s
+Name: girl.jpg                  Size: 2030x3608  Tile Size: 32x32     Regions: 7232     Region Avg. Time: 0.0000437076 s   Algorithm: Improved   Exe. Time: 0.32649731636047363 s
+Name: girl.jpg                  Size: 2030x3608  Tile Size: 64x64     Regions: 1824     Region Avg. Time: 0.0000832123 s   Algorithm: Improved   Exe. Time: 0.15551495552062988 s
+Name: landscape.jpg             Size: 3648x5472  Tile Size: 32x32     Regions: 19494    Region Avg. Time: 0.0000403141 s   Algorithm: Improved   Exe. Time: 0.8378772735595703 s
+Name: landscape.jpg             Size: 3648x5472  Tile Size: 64x64     Regions: 4902     Region Avg. Time: 0.0000789488 s   Algorithm: Improved   Exe. Time: 0.4125950336456299 s
+Name: unreal.jpeg               Size: 2160x3840  Tile Size: 32x32     Regions: 8160     Region Avg. Time: 0.0000419088 s   Algorithm: Improved   Exe. Time: 0.3546314239501953 s
+Name: unreal.jpeg               Size: 2160x3840  Tile Size: 64x64     Regions: 2040     Region Avg. Time: 0.0000846329 s   Algorithm: Improved   Exe. Time: 0.17722010612487793 s

@@ -1,0 +1,12 @@
+Name: bear.jpg                  Size: 740x740    Tile Size: 16x16     Regions: 2209     Region Avg. Time: 0.0000319087 s   Algorithm: Improved   Exe. Time: 0.07254505157470703 s
+Name: bear.jpg                  Size: 740x740    Tile Size: 32x32     Regions: 576      Region Avg. Time: 0.0000406853 s   Algorithm: Improved   Exe. Time: 0.024518728256225586 s
+Name: bear.jpg                  Size: 740x740    Tile Size: 64x64     Regions: 144      Region Avg. Time: 0.0000745383 s   Algorithm: Improved   Exe. Time: 0.011020183563232422 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 16x16     Regions: 4242     Region Avg. Time: 0.0000328188 s   Algorithm: Improved   Exe. Time: 0.14055776596069336 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 32x32     Regions: 1071     Region Avg. Time: 0.0000495291 s   Algorithm: Improved   Exe. Time: 0.054526567459106445 s
+Name: mountain.jpg              Size: 664x1601   Tile Size: 64x64     Regions: 286      Region Avg. Time: 0.0000884113 s   Algorithm: Improved   Exe. Time: 0.023102760314941406 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 16x16     Regions: 8160     Region Avg. Time: 0.0000347728 s   Algorithm: Improved   Exe. Time: 0.29172825813293457 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 32x32     Regions: 2040     Region Avg. Time: 0.0000447432 s   Algorithm: Improved   Exe. Time: 0.09458184242248535 s
+Name: snow.jpg                  Size: 1080x1920  Tile Size: 64x64     Regions: 510      Region Avg. Time: 0.0000864789 s   Algorithm: Improved   Exe. Time: 0.047525882720947266 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 16x16     Regions: 1000     Region Avg. Time: 0.0000349162 s   Algorithm: Improved   Exe. Time: 0.036477088928222656 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 32x32     Regions: 260      Region Avg. Time: 0.0000501066 s   Algorithm: Improved   Exe. Time: 0.013026714324951172 s
+Name: tree.jpg                  Size: 398x640    Tile Size: 64x64     Regions: 70       Region Avg. Time: 0.0001094222 s   Algorithm: Improved   Exe. Time: 0.007565736770629883 s
