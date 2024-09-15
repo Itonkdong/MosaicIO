@@ -6,3 +6,4 @@ NAME: bear.jpg             SIZE: 740x740    T_SIZE: 16x16     REG: 2209     REG_
 NAME: bear.jpg             SIZE: 740x740    T_SIZE: 16x16     REG: 2209     REG_AVG: 0.0001246200 s   ALG: Base       RAND: True     RAND_V: 60    PARA: False    THREADS: -1     EXEC_TIME: 0.2726888656616211 s
 NAME: bear.jpg             SIZE: 740x740    T_SIZE: 16x16     REG: 2209     REG_AVG: 0 s              ALG: Base       RAND: False    RAND_V: -1    PARA: True     THREADS: 12     EXEC_TIME: 2.586602210998535 s
 NAME: bear.jpg             SIZE: 740x740    T_SIZE: 16x16     REG: 2209     REG_AVG: 0.0012244753 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 2.603546380996704 s
+

@@ -1,0 +1,10 @@
+NAME: bear.jpg             SIZE: 740x740    T_SIZE: 4x4       REG: 34225    REG_AVG: 0.0000316481 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 1.121492624282837 s
+NAME: bear.jpg             SIZE: 740x740    T_SIZE: 8x8       REG: 8649     REG_AVG: 0.0000282730 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.2533266544342041 s
+NAME: bear.jpg             SIZE: 740x740    T_SIZE: 16x16     REG: 2209     REG_AVG: 0.0000327066 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.07410597801208496 s
+NAME: bear.jpg             SIZE: 740x740    T_SIZE: 32x32     REG: 576      REG_AVG: 0.0000425480 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.02350902557373047 s
+NAME: bear.jpg             SIZE: 740x740    T_SIZE: 64x64     REG: 144      REG_AVG: 0.0000826544 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.01100015640258789 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 4x4       REG: 458216   REG_AVG: 0.0000289171 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 13.775681018829346 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 8x8       REG: 114554   REG_AVG: 0.0000283717 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 3.369981288909912 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 16x16     REG: 28702    REG_AVG: 0.0000325576 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.9695427417755127 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0.0000436803 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.3267710208892822 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 64x64     REG: 1824     REG_AVG: 0.0000992283 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.1852130889892578 s

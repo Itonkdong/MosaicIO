@@ -38,6 +38,12 @@ class ImageProcessor:
 
         return resized
 
+
+
+    # This approach is more efficient because it uses NumPy's optimized array operations.
+    def average_color(self, image):
+        return np.mean(image, axis=(0, 1))
+
     def average_color_slow(self, image):
         image_copy = image.astype(np.float64)
         blue_sum = 0
@@ -54,16 +60,12 @@ class ImageProcessor:
 
         return blue_sum / pixel_count, green_sum / pixel_count, red_sum / pixel_count
 
-    # This approach is more efficient because it uses NumPy's optimized array operations.
-    def average_color(self, image):
-        return np.mean(image, axis=(0, 1))
-
-    def calculate_distance_slow(self, image_avg1, image_avg2):
-        return np.linalg.norm(image_avg1 - image_avg2)
-
     # This approach is around 3.5 times faster
     def calculate_distance(self, image_avg1, image_avg2):
         return ((image_avg1[0] - image_avg2[0]) ** 2 + (image_avg1[1] - image_avg2[1]) ** 2 + (image_avg1[2] - image_avg2[2]) ** 2) ** 0.5
+
+    def calculate_distance_slow(self, image_avg1, image_avg2):
+        return np.linalg.norm(image_avg1 - image_avg2)
 
     def file_exists(self, file_path):
         if os.path.exists(file_path):

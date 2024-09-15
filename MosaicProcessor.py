@@ -21,8 +21,8 @@ class MosaicProcessor:
     KEEP_SAME_SIZE = 1
     FILL_BORDERS = 2
 
-    def __init__(self, image_processor: ImageProcessor, tiles_path=__DEFAULT_TILES_FOLDER):
-
+    def __init__(self, image_processor: ImageProcessor, tiles_path=__DEFAULT_TILES_FOLDER, override_database=False):
+        self.__override_database = override_database
         self.tiles_path = tiles_path
         self.image_processor = image_processor
         self.last_execution_time = -1
@@ -36,7 +36,7 @@ class MosaicProcessor:
     def __populate_and_get_tiles_database(self, tiles_path, tile_size):
         database_filename = f"{os.path.abspath(os.getcwd())}\\databases\\{tile_size[0]}x{tile_size[1]}-tiles-database.pickle"
 
-        if self.image_processor.file_exists(database_filename):
+        if self.image_processor.file_exists(database_filename) and not self.__override_database:
             # print(f"Found existing tiles database for tile size: {tile_size[0]}x{tile_size[1]}")
             return self.image_processor.load_from_file(database_filename)
 
@@ -55,7 +55,7 @@ class MosaicProcessor:
     def __populate_and_get_average_database(self, tiles, tile_size):
         database_filename = f"{os.path.abspath(os.getcwd())}\\databases\\{tile_size[0]}x{tile_size[1]}-average-database.pickle"
 
-        if self.image_processor.file_exists(database_filename):
+        if self.image_processor.file_exists(database_filename) and not self.__override_database:
             # print(f"Found existing average database for tile size: {tile_size[0]}x{tile_size[1]}")
             return self.image_processor.load_from_file(database_filename)
 
@@ -105,7 +105,7 @@ class MosaicProcessor:
         closest_tile = self.__tiles[tile_name]
         return closest_tile
 
-    def find_best_match_for_region_improved_parallel(self, region,kd_tree,index_table):
+    def find_best_match_for_region_improved_parallel(self, region, kd_tree, index_table):
         region_average = self.image_processor.average_color(region)
         distance, i = kd_tree.query(region_average)
         tile_name = list(index_table.values())[i]
@@ -179,6 +179,8 @@ class MosaicProcessor:
                 if randomization_improvement:
                     random_index_keys = random.sample(list(self.__save_index_table.keys()), randomization_value)
                     self.__index_table = {key: self.__save_index_table[key] for key in random_index_keys}
+
+                if randomization_improvement and improved:
                     self.__kd_tree = KDTree(list(self.__index_table.keys()))
 
                 # What algorithm to use
@@ -320,7 +322,7 @@ class MosaicProcessor:
             )
 
 
-def do_experiment_1(improved=False, base=True):
+def do_experiment_1(improved=True, base=False):
     if not improved and not base:
         return
 
@@ -333,10 +335,10 @@ def do_experiment_1(improved=False, base=True):
     with open("./test_results/test_run.txt", "w") as f:
         f.write(str(test_run + 1))
 
-    test_folder_path = "./test_images/large"
+    test_folder_path = "./test_images/single"
     test_results_folder_path = f"./test_results/{test_run}"
     log_filepath = f"./test_results/{test_run}/test_log.txt"
-    all_tile_sizes = [(32, 32)]
+    all_tile_sizes = [(4,4),(8,8), (16,16), (32,32), (64,64)]
 
     if not os.path.isdir(test_results_folder_path):
         os.mkdir(test_results_folder_path)
@@ -348,12 +350,12 @@ def do_experiment_1(improved=False, base=True):
 
         for tile_size in all_tile_sizes:
             title_base = f"test-{img_name}-{MosaicProcessor.get_formatted_tile_size(tile_size)}-base"
-            title_improved = f"test-{img_name}-{MosaicProcessor.get_formatted_tile_size(tile_size)}-improved-fixed-border"
+            title_improved = f"test-{img_name}-{MosaicProcessor.get_formatted_tile_size(tile_size)}-improved"
             print(f"Running experiment on: {img_name}, tile_size: {tile_size}")
             if improved:
                 mosaic_processor.create_mosaic(img_filepath, tile_size, title=title_improved,
                                                dest_folder=test_results_folder_path,
-                                               improved=True, write_log=True, log_filepath=log_filepath)
+                                               improved=True,write=True ,write_log=True, log_filepath=log_filepath)
                 print(f"Execution time: {mosaic_processor.get_last_execution_time()}")
 
             if base:
@@ -362,8 +364,8 @@ def do_experiment_1(improved=False, base=True):
                                                improved=False, write_log=True, log_filepath=log_filepath)
                 print(f"Execution time: {mosaic_processor.get_last_execution_time()}")
 
-def do_experiment_2():
 
+def do_experiment_2():
     image_processor = ImageProcessor()
     mosaic_processor = MosaicProcessor(image_processor)
 
@@ -373,55 +375,52 @@ def do_experiment_2():
     with open("./experiments/experiment_run.txt", "w") as f:
         f.write(str(run_number + 1))
 
-    img_filepath = "./test_images/single/bear.jpg"
+    img_filepath = "./test_images/both/girl.jpg"
     dest_folder = f"./experiments/{run_number}"
     log_filepath = f"./experiments/{run_number}/log.txt"
-    tile_size = (16,16)
+    tile_size = (16, 16)
     randomization_value = 60
 
     if not os.path.isdir(dest_folder):
         os.mkdir(dest_folder)
 
-    combinations = (True,False)
+    combinations = (True, False)
 
     for improved in combinations:
         for randomization in combinations:
             for parallelization in combinations:
                 title = f"{"improved" if improved else "base"}-{"rand" if randomization else "no_rand"}-{"para" if parallelization else "no_para"}"
                 mosaic_processor.create_mosaic(img_filepath, tile_size,
-                                                              improved=improved,
-                                                              randomization_improvement=randomization,
-                                                              randomization_value=randomization_value,
-                                                              parallel_processing=parallelization,
-                                                              max_workers=None,
-                                                              write_log=True,
-                                                              write=True,
-                                                              title=title,
-                                                              fill_option=MosaicProcessor.KEEP_SAME_SIZE,
-                                                              dest_folder=dest_folder,
-                                                            log_filepath=log_filepath)
-
-
+                                               improved=improved,
+                                               randomization_improvement=randomization,
+                                               randomization_value=randomization_value,
+                                               parallel_processing=parallelization,
+                                               max_workers=None,
+                                               write_log=True,
+                                               write=True,
+                                               title=title,
+                                               fill_option=MosaicProcessor.KEEP_SAME_SIZE,
+                                               dest_folder=dest_folder,
+                                               log_filepath=log_filepath)
 
 
 def normal_run():
     image_processor = ImageProcessor()
-    mosaic_processor = MosaicProcessor(image_processor)
+    mosaic_processor = MosaicProcessor(image_processor, "./tiles", False)
 
-    tiles_size = (8, 8)
-    img_filepath = "./test_images/both/bear.jpg"
+    tiles_size = (32, 32)
+    img_filepath = "./test_images/both/girl.jpg"
 
     mosaic_image = mosaic_processor.create_mosaic(img_filepath, tiles_size,
-                                                  improved=True,
+                                                  improved=False,
                                                   randomization_improvement=True,
-                                                  randomization_value=60,
-                                                  parallel_processing=True,
+                                                  randomization_value=2,
+                                                  parallel_processing=False,
                                                   max_workers=None,
                                                   write_log=True,
-                                                  write=False,
-                                                  title="Test-15",
+                                                  write=True,
+                                                  title="Test-28",
                                                   fill_option=MosaicProcessor.FILL_BORDERS)
-
 
     print(f"Execution time {mosaic_processor.get_last_execution_time()}")
 
@@ -429,7 +428,7 @@ def normal_run():
 
 
 if __name__ == '__main__':
-    # do_experiment()
-    # normal_run()
+    # do_experiment_1()
+    normal_run()
     # print(os.cpu_count())
-    do_experiment_2()
+    # do_experiment_2()

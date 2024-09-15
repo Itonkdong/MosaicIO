@@ -1,0 +1,8 @@
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0 s              ALG: Improved   RAND: True     RAND_V: 60    PARA: True     THREADS: 12     EXEC_TIME: 1.2663536071777344 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0.0001062428 s   ALG: Improved   RAND: True     RAND_V: 60    PARA: False    THREADS: -1     EXEC_TIME: 0.777733325958252 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0 s              ALG: Improved   RAND: False    RAND_V: -1    PARA: True     THREADS: 12     EXEC_TIME: 0.7031981945037842 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0.0000453989 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.33378100395202637 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0 s              ALG: Base       RAND: True     RAND_V: 60    PARA: True     THREADS: 12     EXEC_TIME: 0.9519329071044922 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0.0000926041 s   ALG: Base       RAND: True     RAND_V: 60    PARA: False    THREADS: -1     EXEC_TIME: 0.6731956005096436 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0 s              ALG: Base       RAND: False    RAND_V: -1    PARA: True     THREADS: 12     EXEC_TIME: 8.313662767410278 s
+NAME: girl.jpg             SIZE: 2030x3608  T_SIZE: 32x32     REG: 7232     REG_AVG: 0.0011040086 s   ALG: Base       RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 7.8169097900390625 s

@@ -1,0 +1,5 @@
+NAME: underground.jpg      SIZE: 5275x7912  T_SIZE: 8x8       REG: 652740   REG_AVG: 0.0000309001 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 21.051035404205322 s
+NAME: underground.jpg      SIZE: 5275x7912  T_SIZE: 16x16     REG: 163350   REG_AVG: 0.0000369796 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 6.320996284484863 s
+NAME: underground.jpg      SIZE: 5275x7912  T_SIZE: 32x32     REG: 40920    REG_AVG: 0.0000497487 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 2.1160964965820312 s
+NAME: underground.jpg      SIZE: 5275x7912  T_SIZE: 64x64     REG: 10292    REG_AVG: 0.0000937475 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 1.0194780826568604 s
+

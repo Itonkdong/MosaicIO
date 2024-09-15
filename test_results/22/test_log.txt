@@ -1,0 +1,5 @@
+NAME: bear.jpg             SIZE: 740x740    T_SIZE: 8x8       REG: 8649     REG_AVG: 0.0000306904 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.2717878818511963 s
+NAME: bear.jpg             SIZE: 740x740    T_SIZE: 16x16     REG: 2209     REG_AVG: 0.0000320051 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.07372260093688965 s
+NAME: bear.jpg             SIZE: 740x740    T_SIZE: 32x32     REG: 576      REG_AVG: 0.0000415421 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.02400517463684082 s
+NAME: bear.jpg             SIZE: 740x740    T_SIZE: 64x64     REG: 144      REG_AVG: 0.0000743570 s   ALG: Improved   RAND: False    RAND_V: -1    PARA: False    THREADS: -1     EXEC_TIME: 0.01099538803100586 s
+
